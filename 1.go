@@ -25,6 +25,7 @@ func foo1(n uint) int {
 }
 
 // 求与法
+// FIXME n & n-1 能去掉最后面的那个1,2的整数次幂只有1个1,如果n&(n-1)=0,n是2的整数次幂
 func foo2(n uint) int {
 	ret := 0
 	for n != 0 {
