@@ -1,6 +1,6 @@
-# algorithm
+# 算法 
 
-some algorithm
+总结常见算法
 
 ## [整数的补码](https://github.com/fizzse/algorithm/blob/master/bitmap.c)
 
