@@ -2,7 +2,7 @@
 
 some algorithm
 
-## 整数的补码
+## [整数的补码](https://github.com/fizzse/algorithm/blob/master/bitmap.c)
 
 ## 简单排序 
 
