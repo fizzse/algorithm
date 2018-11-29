@@ -13,3 +13,5 @@
 ## [斐波那契数列](https://github.com/fizzse/algorithm/blob/master/fibonacci.go) 
 
 ## [根据树的先序与中序还原树](https://github.com/fizzse/algorithm/blob/master/tree.go)
+
+## [获取链表的倒数第k个元素](https://github.com/fizzse/algorithm/blob/master/list_find.go)
