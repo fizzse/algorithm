@@ -17,3 +17,5 @@
 ## [获取链表的倒数第k个元素](https://github.com/fizzse/algorithm/blob/master/list_find.go)
 
 ## [链表逆置](https://github.com/fizzse/algorithm/blob/master/list_reverse.go)
+
+## [最大和连续子序列](https://github.com/fizzse/algorithm/blob/master/max_sub_array.go)
