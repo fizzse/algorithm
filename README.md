@@ -6,7 +6,7 @@
 
 ## [整数的原码有多少个1](https://github.com/fizzse/algorithm/blob/master/1.go)
 
-## [简单排序]() 
+## [简单排序](https://github.com/fizzse/algorithm/blob/master/simple_sort.go) 
 
 ## [topK]() 
 
