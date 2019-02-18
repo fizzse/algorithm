@@ -43,15 +43,20 @@ func selectSort(arr []int) {
 
 // 3.插入排序
 func insertSort(arr []int) {
-	var j int
 	size := len(arr)
-
 	for i := 1; i < size; i++ {
-		for j = 0; j < i; j++ {
-			if arr[j] < arr[i] {
+		// 临时保存待排序数据
+		temp := arr[i]
+		j := i - 1
+		for ; j >= 0; j-- {
+			// 找到要插入的位置并一度数据
+			if arr[j] > temp {
+				arr[j+1] = arr[j]
+			} else {
 				break
 			}
 		}
+		arr[j+1] = temp
 	}
 }
 
