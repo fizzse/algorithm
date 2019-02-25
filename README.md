@@ -8,6 +8,12 @@
 
 ## [简单排序](https://github.com/fizzse/algorithm/blob/master/simple_sort.go) 
 
+## [数组合并](https://github.com/fizzse/algorithm/blob/master/array_merge.go) 
+
+## [归并排序](https://github.com/fizzse/algorithm/blob/master/merge_sort.go) 
+
+## [快速排序](https://github.com/fizzse/algorithm/blob/master/quick_sort.go) 
+
 ## [topK]() 
 
 ## [斐波那契数列](https://github.com/fizzse/algorithm/blob/master/fibonacci.go) 
