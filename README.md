@@ -25,3 +25,5 @@
 ## [链表逆置](https://github.com/fizzse/algorithm/blob/master/list_reverse.go)
 
 ## [最大和连续子序列](https://github.com/fizzse/algorithm/blob/master/sub_max_array.go)
+
+## [二分查找](https://github.com/fizzse/algorithm/blob/master/binary_search.go) 
