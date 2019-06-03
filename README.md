@@ -27,3 +27,5 @@
 ## [最大和连续子序列](https://github.com/fizzse/algorithm/blob/master/sub_max_array.go)
 
 ## [二分查找](https://github.com/fizzse/algorithm/blob/master/binary_search.go) 
+
+## [二叉查找树](https://github.com/fizzse/algorithm/blob/master/sort_tree.go) 
