@@ -29,3 +29,5 @@
 ## [二分查找](https://github.com/fizzse/algorithm/blob/master/binary_search.go) 
 
 ## [二叉查找树](https://github.com/fizzse/algorithm/blob/master/sort_tree.go) 
+
+## [游戏数3](https://github.com/fizzse/algorithm/blob/master/search3.go) 
