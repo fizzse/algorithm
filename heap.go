@@ -73,6 +73,54 @@ func (h *Heap) Heapify(start, end int) {
 	}
 }
 
+// 堆排序 1.数组建堆 2.排序
+func HeapSort(arr []int) {
+	if arr == nil || len(arr) == 0 {
+		return
+	}
+
+	// 建堆
+	n := len(arr)-1
+	for i := n / 2; i >= 0; i-- {
+		Heapify(arr,i,n)
+	}
+
+	// 排序
+	heapSort(arr)
+}
+
+// 建堆 O(n)
+func Heapify(arr []int,start,end int) {
+	for {
+		maxpos := start
+		if start*2+1 <= end && arr[start] < arr[start*2+1] {
+			maxpos = start * 2+1
+		}
+
+		if start*2+2 <= end && arr[maxpos] < arr[start*2+2] {
+			maxpos = start*2 + 2
+		}
+
+		if maxpos == start {
+			break
+		}
+
+		arr[start], arr[maxpos] = arr[maxpos], arr[start]
+		start = maxpos
+	}
+}
+
+// 排序 O(n*log n)
+func heapSort(heap []int) {
+	size:=len(heap)-1
+
+	for size >=0{
+		heap[size],heap[0]= heap[0],heap[size]
+		size--
+		Heapify(heap,0,size)
+	}
+}
+
 func main() {
 	h := InitHeap(10)
 	h.Insert(1)
@@ -90,4 +138,8 @@ func main() {
 
 	h.DeleteTop()
 	fmt.Println(h.data[1:])
+
+	arr:=[]int{1,3,5,7,9,2,4,6,8,10}
+	HeapSort(arr)
+	fmt.Println(arr)
 }
