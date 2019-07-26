@@ -30,4 +30,6 @@
 
 ## [二叉查找树](https://github.com/fizzse/algorithm/blob/master/sort_tree.go) 
 
-## [游戏数3](https://github.com/fizzse/algorithm/blob/master/search3.go) 
+## [游戏(数3)](https://github.com/fizzse/algorithm/blob/master/search3.go) 
+
+## [堆和堆排序](https://github.com/fizzse/algorithm/blob/master/heap.go) 
