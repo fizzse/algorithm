@@ -33,3 +33,5 @@
 ## [游戏(数3)](https://github.com/fizzse/algorithm/blob/master/search3.go) 
 
 ## [堆和堆排序](https://github.com/fizzse/algorithm/blob/master/heap.go) 
+
+## [贪心算法](https://github.com/fizzse/algorithm/blob/master/heap.go) 
