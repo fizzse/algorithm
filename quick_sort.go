@@ -10,31 +10,23 @@ import "fmt"
  * 直到拆分到只有一个元素
  *********************************************/
 
-func QuickSort(arr []int) {
-	SeparateSort(arr, 0, len(arr)-1)
-}
-
-func SeparateSort(arr []int, start, end int) {
-	if start >= end {
+func quickSort(arr []int) {
+	if len(arr) <= 1 {
 		return
 	}
 
-	i := Partition(arr, start, end)
-
-	SeparateSort(arr, start, i-1)
-	SeparateSort(arr, i+1, end)
+	i := partition(arr)
+	quickSort(arr[:i])
+	quickSort(arr[i:])
 }
 
-func Partition(arr []int, start, end int) int {
-	// 取最后一个元素为判断数据
-	// 保证右边的都比自己小
-	// 左边(没有元素),都比自己大
+func partition(arr []int) int {
+	end := len(arr) - 1
 	pivot := arr[end]
+	i := 0
 
-	i := start
-	for j := start; j < end; j++ {
-		// 如果右边的数据小,则哨兵后移
-		if arr[j] < pivot {
+	for j := 0; j < end; j++ {
+		if arr[j] <= pivot {
 			if i != j {
 				arr[i], arr[j] = arr[j], arr[i]
 			}
@@ -47,7 +39,8 @@ func Partition(arr []int, start, end int) int {
 }
 
 func main() {
-	arr := []int{1, 3, 5, 7, 9, 2, 4, 6, 8, 0}
-	QuickSort(arr)
+	arr := []int{1, 3, 5, 7, 0, 2, 4, 6, 8, 9, 1}
+	quickSort(arr)
 	fmt.Println(arr)
 }
+
